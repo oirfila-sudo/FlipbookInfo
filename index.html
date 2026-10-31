@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Magazine Flipbook</title>
+    <!-- dFlip CSS (mengarah ke folder lokal) -->
+    <link href="dflip/css/dflip.min.css" rel="stylesheet">
+    <link href="dflip/css/themify-icons.min.css" rel="stylesheet">
+    <style>
+        body { margin: 0; padding: 0; background-color: #3a3a3a; }
+        ._df_book { height: 100vh; width: 100vw; }
+        
+        /* Paksa warna latar DearFlip berubah dan matikan gambar bawaan */
+        .df-container, 
+        .df-ui-bg, 
+        .df-ui-wrapper {
+            background-color: #3a3a3a !important;
+            background-image: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container untuk merender PDF dengan tambahan data-backgroundcolor -->
+    <div class="_df_book" source="majalah.pdf" id="flipbookContainer" data-backgroundcolor="#3a3a3a"></div>
+
+    <!-- jQuery & dFlip JS (mengarah ke folder lokal) -->
+    <script src="dflip/js/libs/jquery.min.js"></script>
+    <script src="dflip/js/dflip.min.js"></script>
+</body>
+</html>
